@@ -1,0 +1,71 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+@font-face {
+    font-family: 'BlackOpsOne'; /*a name to be used later*/
+    src: url('BlackOpsOne.ttf'); /*URL to font*/
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+    font-family: 'BlackOpsOne';
+    
+}
+
+
+
+
+
+body {
+	 font-size: 72px;
+     background: -webkit-linear-gradient(#d65113, #f2976d);
+    -webkit-background-clip: text;
+    line-height:90px;
+}
+
+p{
+    position: fixed;
+    opacity: 0.7;
+    top: 500px;
+    rotate: 10deg;
+}
+
+
+
+header {
+    position: absolute;
+
+}
+
+h1{ 
+    position: sticky;
+    color: #f5c6b0;
+    text-shadow: 10px 10px #541e04;
+    left: 100px;
+    rotate: -5deg;
+    line-height:150px;
+}
+
+h2{
+    position: static;
+    rotate: 180deg;
+}
+
+footer { 
+    position: relative;
+    top: 2000px;
+}
+
+#container {
+	
+}
+
+
+
+

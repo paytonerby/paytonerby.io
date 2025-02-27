@@ -1,0 +1,95 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+@font-face {
+    font-family: 'Cinzel'; /*a name to be used later*/
+    src: url('Cinzel.ttf'); /*URL to font*/
+}
+
+
+body {
+    background: #fcf174;
+    color: black;
+    font-family: 'Cinzel';
+}
+
+
+
+#container {
+	background: #ebd90c;
+    width: 800px;
+    margin:auto;
+    padding: 60px;
+}
+
+ul{
+    list-styling: none;
+    padding-left:0px;
+}
+
+li{
+    border: 1px solid black;
+    display: inline;
+}
+
+
+ul{
+
+    list-style:none;
+    padding-left:0px;
+}
+
+nav a{
+    color:#6afcfa;
+    display: inline-block;
+    background: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    border-width: 5px;
+
+}
+
+nav a:hover {
+    color: black;
+    background: red;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: black;
+}
+
+figure{
+    margin:0px;
+    
+}
+
+img{
+    width: 50%;
+    display: block;
+    margin:auto;
+    margin-bottom: 20px;
+    
+}
+
+figcaption, footer {
+    font-size: 1em;
+}
+
+
+
+

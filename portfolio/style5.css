@@ -1,0 +1,214 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+ 
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(211, 85, 117, 0.847);
+    transition: all 1s; 
+}
+
+header:hover {
+    background-color: rgb(5, 46, 129);
+    border: 3px solid black;
+}
+
+body{
+    background-color: rgb(237, 237, 161);
+}
+
+
+div#circle {
+	background: yellow;
+	width: 400px;
+	height:300px;
+	border-radius:50%;
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    /*transition: background3s, height 5s;*/
+    transition: all 1s; 
+
+}
+
+div#circle:hover {
+    background: pink;
+    height:400px;
+    bottom:50px;
+    right:70px;
+    border: 5px solid black;
+    border-style: dotted;
+}
+
+
+
+div#white-heart-suit {
+    font-size:100px;
+    color: red;
+    position:absolute;
+    top:500px;
+    left:100px;
+    transition: all 1s;
+}
+
+div#white-heart-suit:hover {
+    color:purple;
+}
+
+div#blue-yellow {
+    background: purple;
+    width:0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid blue;
+    position:absolute;
+    top: 200px;
+    left:200px;
+    transition: all 1s;
+}
+
+
+div#blue-yellow:hover {
+    border-top: 50px solid gold;
+    transform: skew(25deg) scale(3); 
+    border-style: dashed;
+
+}
+
+div#orange-rectangle {
+    width: 100px;
+	height: 50px;
+    position:absolute;
+	transform: skew(20deg);
+	background: orangered;
+    left:500px;
+    top:200px; 
+    transition: all 1s;
+}
+
+
+div#orange-rectangle:hover {
+    border: 5px solid goldenrod;
+    transform: rotate(75deg);
+}
+
+div#small-square {
+      background: solid gold;
+      width: 50px;
+      height: 50px;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border: 1px solid red;
+      left:700px;
+      top:400px;
+    }
+
+div#small-square:hover{
+    border: 5px solid green;
+    transform: rotate(95deg);
+}
+
+div#triangle{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid greenyellow;
+    position: absolute;
+    top:300px;
+    left: 100px;
+    transform: rotate(120deg);
+    transition: all 1s;
+}
+
+div#triangle:hover{
+    border-top: 100px solid blueviolet;
+}
+
+
+div#trapezoid {
+        border-bottom: 100px solid rgb(187, 233, 21);
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        height: 0;
+        width: 100px;
+  }
+
+div#trapezoid:hover {
+    border: 5px solid goldenrod;
+    transform: rotate(75deg);
+}
+
+  div#hexagon {
+    width: 100px;
+  height: 57.735px;
+  background: rgb(93, 239, 164);
+  position: relative;
+}
+#hexagon::before {
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid greenyellow;
+}
+#hexagon::after {
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 28.8675px solid greenyellow;
+}
+
+div#hexagon:hover {
+    border: 10px rgb(226, 22, 178);
+    transform: rotate(67deg)
+}
+ 
+
+    #infinity {
+      position: relative;
+      width: 212px;
+      height: 100px;
+      box-sizing: content-box;
+      top: 700px;
+      left:200px;
+    }
+    #infinity:before,
+    #infinity:after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      border: 20px solid rgb(24, 46, 4);
+      border-radius: 50px 50px 0 50px;
+      transform: rotate(-45deg);
+    }
+    #infinity:after {
+      left: auto;
+      right: 0;
+      border-radius: 50px 50px 50px 0;
+      transform: rotate(45deg);
+    }
+ div#infinity:hover{
+    border: 5px solid goldenrod;
+    transform: rotate(75deg);
+}
