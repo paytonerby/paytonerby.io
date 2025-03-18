@@ -26,10 +26,6 @@ body {
 }
 
 
-#container {
-	
-}
-
 
 section{
 	background:#eb5834;
@@ -44,13 +40,6 @@ h1,h2{
 
 
 
-.mobile{
-
-}
-
-.desktop{
-	display:none;
-}
 
 
 /* ========================================
