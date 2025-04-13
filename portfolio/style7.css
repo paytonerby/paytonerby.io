@@ -22,15 +22,16 @@ header, footer {
 }
 
 header h1{
-	margin-bottom:90px;
-	line-height: 50px;
+	margin-bottom:10px;
+	line-height: 20px;
 }
 
 section{
 	background:#E2856E;
 	border: 5px solid black;
 	padding: 10px;
-	margin-left:20px;
+	margin-left: 100px;
+	
 }
 
 
@@ -44,7 +45,6 @@ body {
 		margin:auto;
 		padding: 20px;
 		margin:20px;
-		display:flex;
 }
 	
 figure img {
@@ -60,6 +60,7 @@ figure.responsive {
     overflow: hidden;
     max-width: 100%;
 	flex-direction: column;
+
 }
 
 figure.responsive iframe {
