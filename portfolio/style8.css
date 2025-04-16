@@ -1,0 +1,59 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+@font-face {
+    font-family: 'Merienda'; /*a name to be used later*/
+    src: url('Merienda.ttf'); /*URL to font*/
+}
+
+
+
+
+body {
+	background-image: linear-gradient(to right, black,gray);
+	background-color: #cc6c6c;
+	color: white;
+	font-size:2em;
+	word-spacing: 20px;
+	-webkit-text-stroke-width: .3px;
+  	-webkit-text-stroke-color: black;
+	font-family:'Merienda';
+	letter-spacing: normal;
+	line-height: normal;
+}
+
+
+
+h1, h2 {
+	word-spacing: normal;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	text-align: center;
+}
+
+
+img {
+	width: 900px;
+	height: auto;
+	display: block;
+	margin:auto; 
+
+  }
+
+#container {
+	
+}
+
+
+
+
