@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Assignment 8: jQuery</title>
+	
+	<link rel="stylesheet" href="style8.css">	
+
+</head>
+
+
+<body>
+
+  <div id="container">
+
+    
+
+<header>
+<h1>Modern Focal Point Photography</h1>
+<h2>All About It</h2>
+</header>
+
+<main>
+
+<button id="p1">About the Company</button>
+<button id="p2">About The Owner</button>
+<button id="p3">Areas of Work</button>
+
+
+<p id="p1">Modern Focal Point Photography is a company that explores the creativity behind the image. This lets student athletes see their actions in a result to an edit. We find the story and emotion behind each play, each score, and each athlete. Not only does this showcase student athletes in edited results.</p>
+
+<p id="p2">I am Payton Erby. I am an artist who likes to search for the stories behind a picture. I got into photography the moment I took my first up close-up photo of wet grass. I was 13 when I started to explore the art of photography, and at that moment, I knew that this was my dream. I got my first camera when I was 15 and I use that camera to capture the story behind each sport picture and tell a beautiful story with the background I snap. </p>
+
+<p id="p3">Sports, Landscape, Macro, Portraits</p>
+
+<p>Photo Examples Down Below in "Areas if Work" order from my portfolio!</p>
+
+<figure><img src="kfive.jpg" alt="Kalen Allen, 2022. MFP.">
+</figure>
+
+<figure><img src="sunset-tree.jpg" alt="Havana. MFP."></figure>
+
+<figure><img src="macro.jpg" alt="Bush. MFP."></figure>
+
+<figure><img src="rima.jpg" alt="Rima Bell, 2024. MFP."></figure> 
+
+<figure>Courtesy of the author</figure>
+
+</main>
+
+
+
+  </div><!-- close "container" -->
+  
+  
+  <!-- Paste the jQuery starter code below here -->
+
+    <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+<script>
+  $(document).ready(function() {
+$("p#p1").hide();
+$("p#p2").hide();
+$("p#p3").hide();
+  })
+
+
+
+$("button#p1").click(function() {
+
+    //$("p#p1").show();
+    //$("p#p1").slideDown();
+    $("p#p1").slideToggle(500);
+   
+
+
+});//close p1 function
+
+
+$("button#p2").click(function() {
+
+        //$("p#p2").fadeIn(500);
+        $("p#p2").fadeToggle(500);
+
+});//close p2 function
+
+
+$("button#p3").click(function() {
+//$("p#p3").show();
+//$("p#p3").slideDown();
+$("p#p3").slideToggle(500);
+
+
+
+});//close p3 function
+
+$("h2").click(function(){
+
+   // $("body").css("background","gold");
+//$("body").addClass("pageMagic");
+$("body").toggleClass("pageMagic");
+
+});//close .ready()
+</script>
+  
+<footer>
+    <p> &copy; Modern Focal Point Photography. Payton Erby. 2025</p>
+</footer>
+  
+
+</body>
+	
+</html>
+  
