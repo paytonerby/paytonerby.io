@@ -54,6 +54,13 @@ img {
 	
 }
 
+button{
+	color:black;
+	align-content: center;
 
+}
 
+button:hover {
+	color: blue;
+}
 
